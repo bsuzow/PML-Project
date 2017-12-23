@@ -160,8 +160,7 @@ g.dumbbell.melt
 
 ## Data Modeling
 
-In absence of a good strategy of predictor selection, all measurement predictors are used in model building. 
-The random forest (rf) algorithm is selected for its ability to handle a large number of predictors. With the caret package's trainControl(), cross validation folds can be created with a parameter setting. The 5-fold cross validation is utilized. In order to achieve an efficient execution, [the parallel processing (courtesy of Len Greski)](https://github.com/lgreski/datasciencectacontent/blob/master/markdown/pml-randomForestPerformance.md) is incorporated.
+In absence of a good strategy of predictor selection, all measurement predictors are used in model building. The Linear Determinant Analysis (LDA), Random Forest (RF), and Support Vector Machine (SVM) algorithms were tried (the details of the exploration are not included in this report).  RF returned the best accuracy, which hence is selected  with the caret package's trainControl() for 5 cross validation folds. In order to achieve efficient execution, [the parallel processing (courtesy of Len Greski)](https://github.com/lgreski/datasciencectacontent/blob/master/markdown/pml-randomForestPerformance.md) is incorporated.
 
 
 ```{r DataModel, message=FALSE, warning=FALSE}
